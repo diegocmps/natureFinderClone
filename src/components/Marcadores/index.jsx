@@ -2,11 +2,14 @@ import PropTypes from 'prop-types';
 import { Marker, Popup } from 'react-leaflet';
 import L from 'leaflet'
 import markerIcon from '../../assets/imagens/leaf-green.png';
+import shadowIcon from '../../assets/imagens/leaf-shadow.png';
+
 
 
 // Criar o ícone personalizado
 const customMarkerIcon = new L.Icon({
     iconUrl: markerIcon,
+    shadowUrl: shadowIcon,
     iconSize: [25, 41],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
